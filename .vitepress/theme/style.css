@@ -1,0 +1,118 @@
+/* AutoAgent Design 暗色主题 */
+
+:root {
+  --vp-c-bg: #0a0a14;
+  --vp-c-bg-alt: #0d0d1a;
+  --vp-c-bg-elv: #111128;
+  --vp-c-text-1: #e8e8f0;
+  --vp-c-text-2: #a0a0b8;
+  --vp-c-brand-1: #6366f1;
+  --vp-c-brand-2: #818cf8;
+  --vp-c-brand-3: #a5b4fc;
+  --vp-c-divider: #1e1e3a;
+  --vp-nav-bg-color: rgba(10, 10, 20, 0.92);
+  --vp-sidebar-bg-color: #0d0d1a;
+  --vp-code-block-bg: #0d0d1a;
+}
+
+/* Hero 区域暗色渐变背景 */
+.VPHome {
+  background: linear-gradient(135deg, #0a0a14 0%, #1a1a35 50%, #0f0f23 100%);
+  padding: 2rem 0;
+}
+
+/* 标题渐变色文字 */
+.VPHero .name {
+  font-size: 3.2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.VPHero .text {
+  font-size: 1.5rem;
+  color: #c4b5fd !important;
+}
+
+.VPHero .tagline {
+  color: #a0a0b8 !important;
+}
+
+/* Feature 卡片 */
+.VPFeature {
+  background: rgba(99, 102, 241, 0.05) !important;
+  border: 1px solid rgba(99, 102, 241, 0.15) !important;
+  transition: all 0.3s ease !important;
+}
+
+.VPFeature:hover {
+  background: rgba(99, 102, 241, 0.12) !important;
+  border-color: rgba(99, 102, 241, 0.4) !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15) !important;
+}
+
+.VPFeature .title {
+  color: #e8e8f0 !important;
+}
+
+/* Navbar 毛玻璃效果 */
+.VPNav {
+  background: rgba(10, 10, 20, 0.9) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+/* 按钮渐变 */
+.VPButton.medium.brand {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  border: none;
+}
+
+.VPButton.medium.brand:hover {
+  background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35);
+}
+
+/* 侧边栏 */
+.VPSidebar {
+  background: #0d0d1a !important;
+}
+
+.VPSidebarItem .text {
+  color: #a0a0b8 !important;
+}
+
+.VPSidebarItem.is-active > .item .text {
+  color: #a5b4fc !important;
+}
+
+/* 代码块 */
+.vp-code-group .tabs {
+  background: #0d0d1a !important;
+}
+
+.vp-code-block {
+  background: #0d0d1a !important;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a4a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a5a;
+}
